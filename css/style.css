@@ -1,66 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,500&family=Work+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
 * {
-  margin: 0;   
+  margin: 0;
   padding: 0;
-}
-.row {
-  border: 5px solid red;
- display: flex;
-
+  box-sizing: border-box;
 }
 
-   .column {
-  flex: 33.33%;
-  float: left;
-  position: relative;
+body {
+
+background-color: rgb(223, 226, 225);
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif; 
+color: rgb(81, 80, 80);
+}
+
+.container {
+ border: 2px solid  firebrick;
+ display: grid;
+ justify-content: center;
+ height: 200vh;
+}
+/* first-title section */
+
+.first-title {
+  border: 2px solid  rgb(34, 178, 75);
   text-align: center;
-  color: white;
-  border: 5px solid black; 
-  object-fit: contain;
-  padding-left: 10px;
-  padding-right: 10px;
- 
-  }
-   
-.san-francisco{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-   border: 5px solid green;
-}
-
-.new-york{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-   border: 5px solid orange;
-}
-
-  .london{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-     border: 5px solid palevioletred;
-     
-  }
-
-  .btn{
-border:2px solid rgb(187, 184, 184);
-border-radius: 3px;
-display: block;
-margin-left: 93%;
-margin-top: 8%;
-width:80%;
-height: 50%;
-background-color: white;
-color: rgb(100, 98, 98);
-padding: 20px;
-height: max-content;
-  }
+  height: 14vh;
+  margin-top: 50px;
+  width: 1500px;
   
-  .btn h2{
-    text-align: center;
-     border: 5px solid tomato;
-  }
+
+
+}
+
+.first-title h1 {
+  border: 2px solid  rgb(234, 123, 5);
+font-family: 'Open Sans', sans-serif;
+  height: 7vh;
+  font-size: 50px;
+ 
+
+
+}
+
+.first-title h3 {
+  border: 2px solid  rgb(64, 14, 202);
+  font-family:'Work Sans', sans-serif; 
+  font-size: 30px;
+  height: 7vh;
+    padding-top: 7px;
+ 
+
+
+}
+
+.first-row{
+  width: 1500px;
+  border: 2px solid  rgb(236, 9, 9);
+  height: 40vh;
+  position: relative;
+  top:-100px;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 25px;
+ 
+}
+
+.first-row img {
+  border: 2px solid  rgb(28, 9, 9);
+  width: 100%;
+  height: 100%;
+}
+
+.first-btn {
+
+    border: 2px solid  rgb(201, 13, 111);
+    display: flex;
+    position: relative;
+    top:-200px;
+    bottom: 100px;
+    justify-content: center;
+    height: 65px;
+
+}
+.first-btn button{
+  border: 2px solid  rgb(178, 182, 180);
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+color: rgb(81, 80, 80);
+height: 65px;
+width: 550px;
+border-radius: 4px;
+}
+
+/* second title section */
+
+.second-title {
+  position: relative;
+  top:-350px;
+  border: 2px solid  rgb(34, 178, 75);
+  text-align: center;
+  height: 14vh;
+  margin-top: 50px;
+  width: 1500px;
+
+}
+
+.second-title h1 {
+  border: 2px solid  rgb(234, 123, 5);
+font-family: 'Open Sans', sans-serif;
+  height: 7vh;
+  font-size: 50px;
+
+}
+
+.second-title h3 {
+  border: 2px solid  rgb(64, 14, 202);
+  font-family:'Work Sans', sans-serif; 
+  font-size: 30px;
+  height: 7vh;
+  padding-top: 7px;
+}
+.second-row{
+  width: 1500px;
+  border: 2px solid  rgb(236, 9, 9);
+  height: 40vh;
+  position: relative;
+  top:-450px;
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 25px;
+ 
+}
+
+.second-row img {
+  border: 2px solid  rgb(28, 9, 9);
+  width: 100%;
+  height: 100%;
+}
+
+.second-btn {
+
+    border: 2px solid  rgb(201, 13, 111);
+    display: flex;
+    position: relative;
+    top:-550px;
+    justify-content: center;
+    height: 65px;
+
+}
+.second-btn button{
+  border: 2px solid  rgb(178, 182, 180);
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+color: rgb(81, 80, 80);
+height: 65px;
+width: 550px;
+border-radius: 4px;
+}
+
+
+
